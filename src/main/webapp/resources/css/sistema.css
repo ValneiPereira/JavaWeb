@@ -19,10 +19,6 @@ header {
 header > div{
 	margin-left: 8px;
 }
-footer {
-	padding: 0px 8px;
-	margin-bottom: 10px
-}
 h1 {
 	font-size: 24px;
 	font-weight: 500;
@@ -32,5 +28,26 @@ h1 {
 #conteudo {
 	padding: 0px 8px
 }
-
+footer {
+	padding: 0px 8px;
+	margin-bottom: 10px
+}
+#login-dialog{
+	width: 290px;
+	margin: auto;
+	margin-top: 150px;
+}
+.grid-login{
+	background-color: #f2f2f2;
+	border-radius: 8px;
+	border: 1px solid #ccc;
+	margin-top:8px;	 
+	padding: 10px;	
+}
+.rotulo{
+	width: 150px;
+}
+.ui-panelgrid td{
+	height: 34px;
+}
 
