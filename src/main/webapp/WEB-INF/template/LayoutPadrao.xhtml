@@ -10,13 +10,14 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title><ui:insert name="titulo">JavaWeb</ui:insert></title>
         <h:outputStylesheet library="css" name="sistema.css" />
+        <h:outputScript name="jquery.maskMoney.js" library="js"></h:outputScript>
 	</h:head>
 	<h:body>
 		<header>
 			<div>
 	 			<h:link>
-	 			<h:graphicImage library="images" name="logo.png"/>
-				 </h:link>
+	 				<h:graphicImage library="images" name="logo.png" style=""/>
+				</h:link>
 			</div>
 		</header>
 	</h:body>
@@ -28,6 +29,13 @@
 		Estudando JavaWeb - Codigos no Github
 		<a href="https://bit.ly/2KkiWJA" target="_blank">ValneiPereira</a> 
 	</footer>
-	
+	<script>
+		function configurarMoeda() {
+			$(".moeda").maskMoney({ decimal:",", thousands:".", allowZero: true});			
+		}
+		$(document).ready(function(){
+			configurarMoeda();
+			})
+	</script>
 
 </html>
